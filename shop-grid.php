@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Shop-Grid | Bookshop Responsive Bootstrap4 Template</title>
+        <title>Catalogo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Favicons -->
-        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="shortcut icon" href="images/icons/cartIcon.png">
         <link rel="apple-touch-icon" href="images/icon.png">
 
         <!-- Google font (font-family: 'Roboto', sans-serif; Poppins ; Satisfy) -->
@@ -389,7 +389,7 @@
             </div>
         </div>
         <!-- End Shop Page -->
-       <?php
+        <?php
         include 'footer.php';
         ?>
         <!-- QUICKVIEW PRODUCT -->
