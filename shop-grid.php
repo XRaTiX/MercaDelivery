@@ -58,7 +58,7 @@
                             <aside class="wedget__categories poroduct--cat">
                                 <h3 class="wedget__title">Categoria de Productos</h3>
                                 <ul>
-                                    <li><a href="shop-grip.html">Frutas <span>(12)</span></a></li>
+                                    <li><a href="shop-grid.html">Frutas <span>(12)</span></a></li>
                                     <li><a href="Verdura.html">Verduras <span>(9)</span></a></li>
 
                                 </ul>
