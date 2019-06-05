@@ -58,7 +58,7 @@
                             <aside class="wedget__categories poroduct--cat">
                                 <h3 class="wedget__title">Categoria de Productos</h3>
                                 <ul>
-                                    <li><a href="#">Frutas <span>(12)</span></a></li>
+                                    <li><a href="shop-grip.html">Frutas <span>(12)</span></a></li>
                                     <li><a href="Verdura.html">Verduras <span>(9)</span></a></li>
 
                                 </ul>
@@ -87,8 +87,8 @@
                                     <!-- Start Single Product -->
                                     <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
-                                            <a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
+                                            <a class="first__img" href="single-product.html"><img src="images\piña\piña1.jpg" height="270" width="340"></a>
+                                            <a class="second__img animation1" href="single-product.html"><img src="images\piña\piña2.jpg" height="270" width="340"></a>
 
                                         </div>
                                         <div class="product__content content--center">
@@ -112,8 +112,8 @@
                                     <!-- Start Single Product -->
                                     <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
-                                            <a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
+                                            <a class="first__img" href="single-product.html"><img src="images\sandia\sandia1.jpg" height="270" width="340"></a>
+                                            <a class="second__img animation1" href="single-product.html"><img src="images\sandia\sandia2.jpg" height="270" width="340"></a>
 
                                         </div>
                                         <div class="product__content content--center">
@@ -136,8 +136,8 @@
                                     <!-- Start Single Product -->
                                     <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images/books/7.jpg" alt="product image"></a>
-                                            <a class="second__img animation1" href="single-product.html"><img src="images/books/8.jpg" alt="product image"></a>
+                                            <a class="first__img" href="single-product.html"><img src="images\naranja\naranja1.jpg" height="270" width="340"></a>
+                                            <a class="second__img animation1" href="single-product.html"><img src="images\naranja\naranja2.jpg" height="270" width="340"></a>
 
                                         </div>
                                         <div class="product__content content--center">
@@ -160,8 +160,8 @@
                                     <!-- Start Single Product -->
                                     <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
-                                            <a class="second__img animation1" href="single-product.html"><img src="images/books/10.jpg" alt="product image"></a>
+                                            <a class="first__img" href="single-product.html"><img src="images\uva\uva1.jpg" height="270" width="340"></a>
+                                            <a class="second__img animation1" href="single-product.html"><img src="images\uva\uva2.jpg" height="270" width="340"></a>
 
                                         </div>
                                         <div class="product__content content--center">
@@ -184,8 +184,8 @@
                                     <!-- Start Single Product -->
                                     <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images/books/11.jpg" alt="product image"></a>
-                                            <a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
+                                            <a class="first__img" href="single-product.html"><img src="images\mandarina\mandarina1.jpg" height="270" width="340"></a>
+                                            <a class="second__img animation1" href="single-product.html"><img src="images\mandarina\mandarina2.jpg" height="270" width="340"></a>
 
                                         </div>
                                         <div class="product__content content--center content--center">
@@ -208,8 +208,8 @@
                                     <!-- Start Single Product -->
                                     <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
-                                            <a class="second__img animation1" href="single-product.html"><img src="images/books/6.jpg" alt="product image"></a>
+                                            <a class="first__img" href="single-product.html"><img src="images\mango\mango1.jpg" height="270" width="340"></a>
+                                            <a class="second__img animation1" href="single-product.html"><img src="images\mango\mango2.jpg" height="270" width="340"></a>
 
                                         </div>
                                         <div class="product__content content--center content--center">
@@ -232,8 +232,8 @@
                                     <!-- Start Single Product -->
                                     <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
-                                            <a class="second__img animation1" href="single-product.html"><img src="images/books/8.jpg" alt="product image"></a>
+                                            <a class="first__img" href="single-product.html"><img src="images\manzana\manzana1.jpg" height="270" width="340"></a>
+                                            <a class="second__img animation1" href="single-product.html"><img src="images\manzana\manzana2.jpg" height="270" width="340"></a>
 
                                         </div>
                                         <div class="product__content content--center content--center">
@@ -256,8 +256,8 @@
                                     <!-- Start Single Product -->
                                     <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images/books/10.jpg" alt="product image"></a>
-                                            <a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
+                                            <a class="first__img" href="single-product.html"><img src="images\pera\pera1.jpg" height="270" width="340"></a>
+                                            <a class="second__img animation1" href="single-product.html"><img src="images\pera\pera2.jpg" height="270" width="340"></a>
 
                                         </div>
                                         <div class="product__content content--center content--center">
@@ -280,8 +280,8 @@
                                     <!-- Start Single Product -->
                                     <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images/books/7.jpg" alt="product image"></a>
-                                            <a class="second__img animation1" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
+                                            <a class="first__img" href="single-product.html"><img src="images\marañon\marañon1.jpg" height="270" width="340"></a>
+                                            <a class="second__img animation1" href="single-product.html"><img src="images\marañon\marañon2.jpg" height="270" width="340"></a>
 
                                         </div>
                                         <div class="product__content content--center content--center">
@@ -304,8 +304,8 @@
                                     <!-- Start Single Product -->
                                     <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
-                                            <a class="second__img animation1" href="single-product.html"><img src="images/books/5.jpg" alt="product image"></a>
+                                            <a class="first__img" href="single-product.html"><img src="images\melon\melon1.jpg" height="270" width="340"></a>
+                                            <a class="second__img animation1" href="single-product.html"><img src="images\melon\melon2.jpg" height="270" width="340"></a>
 
                                         </div>
                                         <div class="product__content content--center content--center">
@@ -328,8 +328,8 @@
                                     <!-- Start Single Product -->
                                     <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
-                                            <a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
+                                            <a class="first__img" href="single-product.html"><img src="images\guineo\guineo1.jpg" height="270" width="340"></a>
+                                            <a class="second__img animation1" href="single-product.html"><img src="images\guineo\guineo2.jpg" height="270" width="340"></a>
 
                                         </div>
                                         <div class="product__content content--center content--center">
@@ -352,8 +352,8 @@
                                     <!-- Start Single Product -->
                                     <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images/books/5.jpg" alt="product image"></a>
-                                            <a class="second__img animation1" href="single-product.html"><img src="images/books/8.jpg" alt="product image"></a>
+                                            <a class="first__img" href="single-product.html"><img src="images\limon\limon1.jpg" height="270" width="340"></a>
+                                            <a class="second__img animation1" href="single-product.html"><img src="images\limon\limon2.jpg" height="270" width="340"></a>
 
                                         </div>
                                         <div class="product__content content--center content--center">
