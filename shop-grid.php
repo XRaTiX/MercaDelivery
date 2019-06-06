@@ -88,7 +88,7 @@
 
                                         </div>
                                         <div class="product__content content--center">
-                                            <h4><a href="single-product.html">Piña</a></h4>
+                                            <h4><a href="single-product.php">Piña</a></h4>
                                             <ul class="prize d-flex">
                                                 <li>$4.50</li>
 
