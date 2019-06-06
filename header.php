@@ -120,7 +120,7 @@
                                                             <span><a href="#">Mi cuenta</a></span>
                                                             <span><a href="#">Ordenes</a></span>
                                                             <span><a href="#">Iniciar Sesion</a></span>
-                                                            <span><a href="#">Crear una Cuenta</a></span>
+                                                            <span><a href="register.php">Crear una Cuenta</a></span>
                                                         </div>
                                                     </div>
                                                 </div>
