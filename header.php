@@ -14,24 +14,23 @@
                         <div class="col-lg-8 d-none d-lg-block">
                             <nav class="mainmenu__nav">
                                 <ul class="meninmenu d-flex justify-content-start">
-                                    <li class="drop with--one--item"><a href="index.html">Home</a></li>
+                                    <li class="drop with--one--item"><a href="index.php">Home</a></li>
                                     <li class="drop"><a href="#">Catalogo</a>
                                         <div class="megamenu mega03">
                                             <ul class="item item03">
                                                 <li class="title">Catalogo</li>
-                                                <li><a href="shop-grid.html">Frutas</a></li>
-                                                <li><a href="single-product.html">Verduras</a></li>
+                                                <li><a href="shop-grid.php">Frutas</a></li>
+                                                <li><a href="verdura.html">Verduras</a></li>
                                             </ul>
                                         </div>
                                     </li>
-                                    <li><a href="contact.html">Contacto</a></li>
+                                    <li><a href="contact.php">Contacto</a></li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="col-md-6 col-sm-6 col-6 col-lg-2">
                             <ul class="header__sidebar__right d-flex justify-content-end align-items-center">
                                 <li class="shop_search"><a class="search__active" href="#"></a></li>
-                                <li class="wishlist"><a href="#"></a></li>
                                 <li class="shopcart"><a class="cartbox_active" href="#"><span class="product_qun">3</span></a>
                                     <!-- Start Shopping Cart -->
                                     <div class="block-minicart minicart__active">
@@ -47,16 +46,16 @@
                                                 <span>$66.00</span>
                                             </div>
                                             <div class="mini_action checkout">
-                                                <a class="checkout__btn" href="cart.html">Ir al Pago</a>
+                                                <a class="checkout__btn" href="cart.php">Ir al Pago</a>
                                             </div>
                                             <div class="single__items">
                                                 <div class="miniproduct">
                                                     <div class="item01 d-flex">
                                                         <div class="thumb">
-                                                            <a href="product-details.html"><img src="images/product/sm-img/1.jpg" alt="product images"></a>
+                                                            <a href="product-details.php"><img src="images/product/sm-img/1.jpg" alt="product images"></a>
                                                         </div>
                                                         <div class="content">
-                                                            <h6><a href="product-details.html">Platano</a></h6>
+                                                            <h6><a href="product-details.php">Platano</a></h6>
                                                             <span class="prize">$3.00</span>
                                                             <div class="product_prize d-flex justify-content-between">
                                                                 <span class="qun">Cantidad: 01</span>
@@ -69,10 +68,10 @@
                                                     </div>
                                                     <div class="item01 d-flex mt--20">
                                                         <div class="thumb">
-                                                            <a href="product-details.html"><img src="images/product/sm-img/3.jpg" alt="product images"></a>
+                                                            <a href="product-details.php"><img src="images/product/sm-img/3.jpg" alt="product images"></a>
                                                         </div>
                                                         <div class="content">
-                                                            <h6><a href="product-details.html">Manzana</a></h6>
+                                                            <h6><a href="product-details.php">Manzana</a></h6>
                                                             <span class="prize">$0.75</span>
                                                             <div class="product_prize d-flex justify-content-between">
                                                                 <span class="qun">Cantidad: 03</span>
@@ -102,7 +101,7 @@
                                                 </div>
                                             </div>
                                             <div class="mini_action cart">
-                                                <a class="cart__btn" href="cart.html">Ver y Editar Carrito</a>
+                                                <a class="cart__btn" href="cart.php">Ver y Editar Carrito</a>
                                             </div>
                                         </div>
                                     </div>
@@ -137,14 +136,14 @@
                         <div class="col-lg-12 d-none">
                             <nav class="mobilemenu__nav">
                                 <ul class="meninmenu">
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="index.php">Home</a></li>
                                     <li><a href="#">Catalogo</a>
                                         <ul>
-                                            <li><a href="shop-grid.html">Frutas</a></li>
-                                            <li><a href="single-product.html">Verduras</a></li>
+                                            <li><a href="shop-grid.php">Frutas</a></li>
+                                            <li><a href="verdura.html">Verduras</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="contact.php">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
