@@ -55,22 +55,15 @@
                     <div class="row">
                         <div class="col-lg-6 col-12">
                             <div class="my__account__wrapper">
-                                <h3 class="account__title">Crear una Cuenta</h3>
-                                <?php
-                                if (isset($_GET["error"])){
-                                ?>
-                                <center><h3><font color="red">Ocurrio un error,intentelo de nuevo</font></h3></center>
-                                <?php
-                                  }
-                                ?>
-                                <form action="proceso-register.php" method="GET">
+                                <h3 class="account__title">Iniciar Sesion</h3>
+                                <form action="proceso-login.php" method="GET">
                                     <div class="account__form">
                                         <div class="input__box">
                                             <label>Correo Electronico</label>
                                             <input type="email" name="email" required>
                                         </div>
                                         <div class="input__box">
-                                            <label>Password<span>*</span></label>
+                                            <label>Password</label>
                                             <input type="password" name="pass" required>
                                         </div>
                                         <div class="form__btn">

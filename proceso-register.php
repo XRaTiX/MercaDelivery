@@ -1,5 +1,4 @@
 <?php
-
 include 'conexion.php';
 
 $email = $_GET["email"];
@@ -13,5 +12,9 @@ $insertar = $conexion->prepare("INSERT INTO usuarios ("
 $insertar->bindParam(':email', $email);
 $insertar->bindParam(':password', $pass);
 
-$insertar->execute();
-echo 'Usuario Creado correctamente';
+if($insertar->execute() == 1){
+    header("Location: index.php");
+}
+else{
+    header("Location: register.php?error=true");
+}
