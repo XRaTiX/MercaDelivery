@@ -4,12 +4,13 @@ include 'conexion.php';
 $email = $_GET["email"];
 $pass = $_GET["pass"];
 
-$consultar_usuario = $conexion->prepare("SELECT * from usuarios WHERE Correo = '$email' AND Password = '$pass'");
+$login = $conexion->prepare("SELECT * from usuarios WHERE Correo = '$email' AND Password = '$pass'");
 
-$consultar_usuario->setFetchMode(PDO::FETCH_ASSOC);
-$consultar_usuario->execute();
+$login->setFetchMode(PDO::FETCH_ASSOC);
+$login->execute();
 
-while($usuario = $consultar_usuario->fetch()){
+while($usuario = $login->fetch()){
+    session_start();
     $_SESSION["Correo"] = $usuario["Correo"];
     header("Location: index.php");
 }

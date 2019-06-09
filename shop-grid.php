@@ -58,8 +58,17 @@
                             <aside class="wedget__categories poroduct--cat">
                                 <h3 class="wedget__title">Categoria de Productos</h3>
                                 <ul>
-                                    <li><a href="shop-grid.php">Frutas <span>(12)</span></a></li>
-                                    <li><a href="Verdura.html">Verduras <span>(9)</span></a></li>
+                                    <?php
+                                    $consultar_catalogo = $conexion->prepare("SELECT * from categoria");
+                                    $consultar_catalogo->setFetchMode(PDO::FETCH_ASSOC);
+                                    $consultar_catalogo->execute();
+                                    while ($categoria = $consultar_catalogo->fetch()) {
+                                        ?>
+                                        <li><a href="shop-grid.php?categoria=<?php echo $categoria["ID"]; ?>"><?php echo $categoria["Nombre"]; ?></a></li>
+                                    <?php }
+                                    ?>
+<!--                                    <li><a href="shop-grid.php">Frutas <span>(12)</span></a></li>
+                    <li><a href="Verdura.html">Verduras <span>(9)</span></a></li>-->
 
                                 </ul>
                             </aside>
@@ -72,7 +81,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="shop__list__wrapper d-flex flex-wrap flex-md-nowrap justify-content-between">
-                                    
+
 
                                 </div>
                             </div>
@@ -81,16 +90,22 @@
                             <div class="shop-grid tab-pane fade show active" id="nav-grid" role="tabpanel">
                                 <div class="row">
                                     <!-- Start Single Product -->
+                                    <?php
+                                    $categoria_ID = $_GET["categoria"];
+                                    $articulo = $conexion->prepare("SELECT articulos.Nombre as Nombre,articulos.ID as ID,articulos.Precio FROM articulos INNER JOIN categoria ON categoria.ID = articulos.Categoria WHERE categoria.ID = $categoria_ID ");
+                                    $articulo->setFetchMode(PDO::FETCH_ASSOC);
+                                    $articulo->execute();
+                                    while ($articulo_nombre = $articulo->fetch()) {?>
                                     <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
                                         <div class="product__thumb">
-                                            <a class="first__img" href="single-product.php"><img src="images\piña\piña1.jpg" height="270" width="340"></a>
-                                            <a class="second__img animation1" href="single-product.php"><img src="images\piña\piña2.jpg" height="270" width="340"></a>
+                                            <a class="first__img" href="single-product.php"><img src="images\articulos\<?php echo $articulo_nombre["Nombre"]; ?>1.jpg" height="270" width="340"></a>
+                                            <a class="second__img animation1" href="single-product.php?articulo=<?php echo $articulo_nombre["ID"]; ?>"><img src="images\articulos\<?php echo $articulo_nombre["Nombre"]; ?>2.jpg" height="270" width="340"></a>
 
                                         </div>
                                         <div class="product__content content--center">
-                                            <h4><a href="single-product.php">Piña</a></h4>
+                                            <h4><a href="single-product.php"><?php echo $articulo_nombre["Nombre"]; ?></a></h4>
                                             <ul class="prize d-flex">
-                                                <li>$4.50</li>
+                                                <li>$<?php echo $articulo_nombre["Precio"]; ?></li>
 
                                             </ul>
                                             <div class="action">
@@ -101,277 +116,16 @@
 
                                         </div>
                                     </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images\sandia\sandia1.jpg" height="270" width="340"></a>
-                                            <a class="second__img animation1" href="single-product.php"><img src="images\sandia\sandia2.jpg" height="270" width="340"></a>
-
-                                        </div>
-                                        <div class="product__content content--center">
-                                            <h4><a href="single-product.html">Sandia</a></h4>
-                                            <ul class="prize d-flex">
-                                                <li>$5.00</li>
-
-                                            </ul>
-                                            <div class="action">
-                                                <div class="actions_inner">
-                                                    
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images\naranja\naranja1.jpg" height="270" width="340"></a>
-                                            <a class="second__img animation1" href="single-product.php"><img src="images\naranja\naranja2.jpg" height="270" width="340"></a>
-
-                                        </div>
-                                        <div class="product__content content--center">
-                                            <h4><a href="single-product.html">Naranja</a></h4>
-                                            <ul class="prize d-flex">
-                                                <li>$2.00</li>
-
-                                            </ul>
-                                            <div class="action">
-                                                <div class="actions_inner">
-                                                    <ul class="add_to_links">
-                                                        <li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-                                                        <a class="cart__btn"><i class="bi bi-shopping-bag4"></i></a>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images\uva\uva1.jpg" height="270" width="340"></a>
-                                            <a class="second__img animation1" href="single-product.php"><img src="images\uva\uva2.jpg" height="270" width="340"></a>
-
-                                        </div>
-                                        <div class="product__content content--center">
-                                            <h4><a href="single-product.html">Uvas</a></h4>
-                                            <ul class="prize d-flex">
-                                                <li>$1.50</li>
-
-                                            </ul>
-                                            <div class="action">
-                                                <div class="actions_inner">
-                                                    <ul class="add_to_links">
-                                                        <li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images\mandarina\mandarina1.jpg" height="270" width="340"></a>
-                                            <a class="second__img animation1" href="single-product.php"><img src="images\mandarina\mandarina2.jpg" height="270" width="340"></a>
-
-                                        </div>
-                                        <div class="product__content content--center content--center">
-                                            <h4><a href="single-product.html">Mandarina</a></h4>
-                                            <ul class="prize d-flex">
-                                                <li>$1.00</li>
-
-                                            </ul>
-                                            <div class="action">
-                                                <div class="actions_inner">
-                                                    <ul class="add_to_links">
-                                                        <li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images\mango\mango1.jpg" height="270" width="340"></a>
-                                            <a class="second__img animation1" href="single-product.php"><img src="images\mango\mango2.jpg" height="270" width="340"></a>
-
-                                        </div>
-                                        <div class="product__content content--center content--center">
-                                            <h4><a href="single-product.html">Mango</a></h4>
-                                            <ul class="prize d-flex">
-                                                <li>$2.00</li>
-
-                                            </ul>
-                                            <div class="action">
-                                                <div class="actions_inner">
-                                                    <ul class="add_to_links">
-                                                        <li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images\manzana\manzana1.jpg" height="270" width="340"></a>
-                                            <a class="second__img animation1" href="single-product.php"><img src="images\manzana\manzana2.jpg" height="270" width="340"></a>
-
-                                        </div>
-                                        <div class="product__content content--center content--center">
-                                            <h4><a href="single-product.html">Manzana</a></h4>
-                                            <ul class="prize d-flex">
-                                                <li>$2.50</li>
-
-                                            </ul>
-                                            <div class="action">
-                                                <div class="actions_inner">
-                                                    <ul class="add_to_links">
-                                                        <li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images\pera\pera1.jpg" height="270" width="340"></a>
-                                            <a class="second__img animation1" href="single-product.php"><img src="images\pera\pera2.jpg" height="270" width="340"></a>
-
-                                        </div>
-                                        <div class="product__content content--center content--center">
-                                            <h4><a href="single-product.html">Pera</a></h4>
-                                            <ul class="prize d-flex">
-                                                <li>$2.50</li>
-
-                                            </ul>
-                                            <div class="action">
-                                                <div class="actions_inner">
-                                                    <ul class="add_to_links">
-                                                        <li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images\marañon\marañon1.jpg" height="270" width="340"></a>
-                                            <a class="second__img animation1" href="single-product.php"><img src="images\marañon\marañon2.jpg" height="270" width="340"></a>
-
-                                        </div>
-                                        <div class="product__content content--center content--center">
-                                            <h4><a href="single-product.html">Marañon</a></h4>
-                                            <ul class="prize d-flex">
-                                                <li>$1.50</li>
-
-                                            </ul>
-                                            <div class="action">
-                                                <div class="actions_inner">
-                                                    <ul class="add_to_links">
-                                                        <li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images\melon\melon1.jpg" height="270" width="340"></a>
-                                            <a class="second__img animation1" href="single-product.php"><img src="images\melon\melon2.jpg" height="270" width="340"></a>
-
-                                        </div>
-                                        <div class="product__content content--center content--center">
-                                            <h4><a href="single-product.html">Melon</a></h4>
-                                            <ul class="prize d-flex">
-                                                <li>$5.00</li>
-
-                                            </ul>
-                                            <div class="action">
-                                                <div class="actions_inner">
-                                                    <ul class="add_to_links">
-                                                        <li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images\guineo\guineo1.jpg" height="270" width="340"></a>
-                                            <a class="second__img animation1" href="single-product.php"><img src="images\guineo\guineo2.jpg" height="270" width="340"></a>
-
-                                        </div>
-                                        <div class="product__content content--center content--center">
-                                            <h4><a href="single-product.html">Guineo</a></h4>
-                                            <ul class="prize d-flex">
-                                                <li>$1.00</li>
-
-                                            </ul>
-                                            <div class="action">
-                                                <div class="actions_inner">
-                                                    <ul class="add_to_links">
-                                                        <li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
-                                    <!-- Start Single Product -->
-                                    <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
-                                        <div class="product__thumb">
-                                            <a class="first__img" href="single-product.html"><img src="images\limon\limon1.jpg" height="270" width="340"></a>
-                                            <a class="second__img animation1" href="single-product.php"><img src="images\limon\limon2.jpg" height="270" width="340"></a>
-
-                                        </div>
-                                        <div class="product__content content--center content--center">
-                                            <h4><a href="single-product.html">Limon</a></h4>
-                                            <ul class="prize d-flex">
-                                                <li>$0.30</li>
-
-                                            </ul>
-                                            <div class="action">
-                                                <div class="actions_inner">
-                                                    <ul class="add_to_links">
-                                                        <li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <!-- End Single Product -->
+                                    <?php
+                                    }
+                                    ?>
                                 </div>
                                 <ul class="wn__pagination">
                                     <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
+<!--                                    <li><a href="#">2</a></li>
                                     <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-chevron-right"></i></a></li>
+                                    <li><a href="#">4</a></li>-->
+<!--                                    <li><a href="#"><i class="zmdi zmdi-chevron-right"></i></a></li>-->
                                 </ul>
                             </div>
 
